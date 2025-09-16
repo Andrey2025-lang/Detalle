@@ -1,12 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css">
+    <title>Regalo Especial</title>
 </head>
 <body>
-    <div class="Heart"></div>
+    <!-- --- ESTRUCTURA HTML --- -->
+    <div class="container">
+        <h1> Un Regalo Especial Para Ti </h1>
+
+        <div class="question active" id="question1">
+            <h3>Pregunta 1: ¿Qué regalo te di? (Es un personaje animado)</h3>
+            <input
+                type="text"
+                placeholder="Escribe tu respuesta aquí..."
+                id="answer1"
+                autocomplete="off"
+            />
+            <button class="send-btn" id="send1">Enviar</button>
+            <div class="hint" id="hint1">Pista: ¡Es el nombre del pato de juguete!</div>
+        </div>
+
+        <div class="question" id="question2">
+            <h3>Pregunta 2: ¿Cuál es mi fecha de cumpleaños? (DD/MM)</h3>
+            <input
+                type="text"
+                placeholder="Ej: 17/12"
+                id="answer2"
+                autocomplete="off"
+            />
+            <button class="send-btn" id="send2">Enviar</button>
+            <div class="hint" id="hint2"></div>
+        </div>
+
+        <div class="question" id="question3">
+            <h3>Pregunta 3: ¿Qué fruta nos gusta a los dos?</h3>
+            <input
+                type="text"
+                placeholder="Escribe tu respuesta aquí..."
+                id="answer3"
+                autocomplete="off"
+            />
+            <button class="send-btn" id="send3">Enviar</button>
+            <div class="hint" id="hint3">Pista: ¡Es un postre demasiado rico!</div>
+        </div>
+
+<div class="letter-container" id="letterContainer">
+    <div class="decoration"></div>
+    <div class="decoration"></div>
+    <div class="decoration"></div>
+    <div class="decoration"></div>
+
+    <h2>¡Felicitaciones! 🎉</h2>
+    <p>Has respondido todo correctamente.</p>
+    <div id="message" style="white-space: pre-wrap; font-style: italic; text-align: left; line-height: 1.6; margin-top: 15px; color: #8B0000;">
+        Muchas gracias por ser una persona tan bonita y bella, eres alguien demasiado linda, me agradas demasiado y espero poder seguir conociéndote mucho más.
+    </div>
+</div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
